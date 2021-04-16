@@ -79,6 +79,8 @@ export default function grey(options = {}) {
           this.maxValue,
         this,
       );
+      newImage.data[ptr++] = this.data[i+3];
+
     } else {
       newImage.data[ptr++] = clamp(
         method(this.data[i], this.data[i + 1], this.data[i + 2], this),
