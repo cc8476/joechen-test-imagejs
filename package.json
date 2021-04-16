@@ -1,6 +1,6 @@
 {
   "name": "joechen-image-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Image processing and manipulation in JavaScript",
   "keywords": [
     "image",
@@ -44,7 +44,6 @@
     "compile": "npm run clean-lib && cross-env NODE_ENV=npm babel src --out-dir lib --ignore \"**/__tests__\" --quiet",
     "eslint": "eslint src test/common.js test/nodeScripts --cache",
     "eslint-fix": "npm run eslint -- --fix",
-    "prepublishOnly": "npm run compile",
     "test": "npm run test-only && npm run eslint",
     "test-coverage": "jest --coverage --runInBand",
     "test-only": "jest"
